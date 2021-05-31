@@ -1,0 +1,15 @@
+applicationType: default
+defaultPackage: com.starwars
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+micronaut:
+  http:
+    client:
+      read-timeout: 120s
+      connect-timeout: 120s
+      shutdown-timeout: 120s
+  server:
+    cors:
+      enabled: true
+features: [ annotation-api, app-name, gradle, http-client, java, java-application, junit, logback, management, netty-server, readme, shade, testcontainers, yaml ]
